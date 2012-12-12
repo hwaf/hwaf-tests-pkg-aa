@@ -5,9 +5,9 @@
 
 using namespace pkg_aa;
 
-void test_th1d()
+void test_h1d()
 {
-  TH1D *h = new TH1D("h1", "h1", 100, 0., 100.);
-  std::cout << "h1: " << h->GetEntries() << "\n";
+  TH1D *h = new TH1D("h1-aa", "h1-aa", 100, 0., 100.);
+  std::cout << "h1-aa: " << h->GetEntries() << "\n";
   delete h; h = NULL;
 }
