@@ -3,10 +3,10 @@
 import waflib.Logs as msg
 
 def pkg_deps(ctx):
+    ctx.use_pkg('settings')
     return
 
 def configure(ctx):
-    ctx.find_root()
     return
 
 def build(ctx):
