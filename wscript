@@ -35,6 +35,13 @@ def build(ctx):
         cwd=incdir,
         )
 
+    ctx(
+        features     = 'py',
+        name         = 'py-pkgaa',
+        source       = 'python/pkgaa.py',
+        install_path = '${INSTALL_AREA}/python',
+        )
+
     msg.info("ROOT-home: %s" % ctx.env.ROOT_HOME)
     return
 
