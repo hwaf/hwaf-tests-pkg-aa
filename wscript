@@ -2,6 +2,11 @@
 
 import waflib.Logs as msg
 
+PACKAGE = {
+    'name': 'pkg-aa',
+    'author': 'hwaf collaboration',
+}
+
 def pkg_deps(ctx):
     ctx.use_pkg('pkg-settings')
     return
